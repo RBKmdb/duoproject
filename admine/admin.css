@@ -1,0 +1,79 @@
+#photo1{
+    height: 100vh;
+    width: 206vh;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.allinputt{
+    margin-bottom: 5px; 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 5px;
+}
+h1{
+
+    color: darkturquoise;
+}
+input{
+    position: relative;
+    top: -750px
+}
+label{
+    position: relative;
+    top: -770px;
+    color:aquamarine;
+    font-size: 20px;
+}
+h1{
+    position: relative;
+    top: -810px;
+}
+#ADBT{
+    position: relative;
+    top: -820px;
+    padding: 18px;
+    margin-left: 17%;
+}
+
+#ADBT{
+    border-radius: 30px;    
+}
+#RMBT{
+    position: relative;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: red;
+    margin-left: 23%;
+    top: -1334px;
+    z-index: 1;
+}
+.title{
+    background-color: blue;
+} 
+  body{
+    background-color: rgba(255, 255, 255, 0.2);
+ }
+ #movi{
+    z-index: 1;
+    position: absolute;
+    margin-top: 400px;
+ }.your-film{
+    background-color: rgba(255, 255, 255, 0.885); 
+    margin-left: 25%;
+    padding: 10px; 
+    height: 500px;
+    width: 350px;  
+    border: 5px solid rgb(93, 90, 90);
+    padding: 20px;
+    border-radius: 30px;
+    margin-right: 0px;
+   position: absolute;
+ margin-top: 400px;
+ z-index: 1
+}
