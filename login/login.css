@@ -4,12 +4,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    /* background: url("images/1.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
+
+strong{
+    color: rgb(201, 35, 187);
+}
+h1{
+    color: white;
 }
 .wrapper{
     display: flex;
@@ -48,7 +48,7 @@ body{
     margin: 0 25px;
 }
 .link:hover, .active{
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid rgb(201, 35, 187);
 }
 .nav-button .btn{
     width: 130px;
