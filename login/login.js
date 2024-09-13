@@ -1,5 +1,3 @@
-
- 
 console.log("hello");
 
 
@@ -90,9 +88,3 @@ $("#log").on("click", function () {
   $("#reg").on("click", function () {
       checkregister();
     });
-  
-
-
-   
-
-

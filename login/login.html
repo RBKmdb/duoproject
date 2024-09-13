@@ -18,8 +18,8 @@
             <ul>
                 <li><a href="#" class="link active">Home</a></li>
                 <li><a href="#" class="link">Blog</a></li>
-                <li><a href="#" class="link">Services</a></li>
-                <li><a href="#" class="link">About</a></li>
+                <li><a href="#services" class="link">Services</a></li>
+                <li><a href="#services" class="link">About</a></li>
             </ul>
         </div>
         <div class="nav-button">
@@ -74,6 +74,12 @@
                 <span>Have an account? <a href="#" onclick="login()">Login</a></span>
                 <header>Sign Up</header>
             </div>
+            <div><label for="Sexe">Role</label>
+                <select id="Role" type="text" name="Role"  >
+                    <option value="User" >User</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
             <div class="two-forms">
                 <div class="input-box">
                     <input type="text" id="first" class="input-field" placeholder="Firstname">
@@ -108,7 +114,40 @@
 
         </div>
     </div>
-</div>   
+</div>  
+<footer id="services">
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>
+          We are a full-stack web development company committed to delivering
+          top-quality web solutions that meet your needs.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/imdb/"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="https://x.com/IMDb?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i> Twitter</a>
+        <a href="https://www.instagram.com/imdb/"><i class="fa fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/company/imdb-com"><i class="fa fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 YourWebsite | Designed by Med Yassine Mbarki</p>
+    </div>
+  </footer>    
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="login.js"></script>
 
