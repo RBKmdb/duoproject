@@ -41,7 +41,6 @@ let list = []
         })
       }
  
-
       const toprated=function(){
       
         
@@ -54,14 +53,11 @@ let list = []
               }
    
 
-
-
-
       function displayOne(film){
         $(".displays").append(`<div class = "mov"> 
           <img src="${film.pictures}">
              <h3 id =""> Name :${film.title}</h3>
-             <h3 id =""> Name :${film.category}</h3>
+             <h3 id =""> duration:${film.category}</h3>
              <h3 id="">durartion:${film.duration}</h3>
            <h3 id ="">rating:${film.rating }</h3>
            <h3 id ="">descreption: ${film.descreption}</h3>
@@ -75,10 +71,8 @@ let list = []
               const element = array[i];
               displayOne(element)
           }
-
       }
      
-
 
 add("inception",148,"great movie ","fun",7.6,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")
 add("oppenheimer",148,"great movie ","",5,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")

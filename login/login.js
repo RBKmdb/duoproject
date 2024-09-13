@@ -9,6 +9,7 @@ function strongPassword(password) {
     return    password.length >= 8 &&   /[A-Z]/.test(password) && /[a-z]/.test(password) && /[$!;?§]/.test(password)
         
     }
+    
 function login(){
     x.css({'left':'4px','opacity':'1'})
     y.css({'right':'-520px','opacity':'0'})

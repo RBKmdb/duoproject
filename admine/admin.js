@@ -19,7 +19,7 @@ function filter(array, predicate) {
   });
   return acc;
 }
-//factory function 
+//factory function !
 let list = JSON.parse(localStorage.getItem(("list"))) || [] 
 function factory(title,duration,descreption,category,rating,pictures){
   var obj={
@@ -58,14 +58,12 @@ each(list,function(elem){
   $(".your-film").append(`<div id="movi">
     <img  src=" ${elem.pictures}" > 
     <h1>  title : ${elem.title} </h1> 
-  <h1> <strong>the title:</strong>${elem.duration}</h1>
+  <h1> <strong>the duration:</strong>${elem.duration}</h1>
   <h1> <strong>rating :</strong>${elem.rating}</h1>
   <h1> <strong>category:</strong>${elem.category}</h1>
     </div>`) 
-
 });
 }
-
 $("#RMBT").on('click',function(){
   $('#movi').remove()
   })
