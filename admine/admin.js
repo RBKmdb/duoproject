@@ -20,7 +20,7 @@ function filter(array, predicate) {
   return acc;
 }
 //factory function 
-let list = JSON.parse(localStorage.getItem(("list"))) || []
+let list = JSON.parse(localStorage.getItem(("list"))) || [] 
 function factory(title,duration,descreption,category,rating,pictures){
   var obj={
   title:title,
