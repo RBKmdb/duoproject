@@ -1,0 +1,48 @@
+body {
+    background-color: #bcb9b9f7; /* Light grey background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #787878; /* Darker grey for the navbar */
+    padding: 10px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar li {
+    display: inline;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+.navbar a:hover {
+    background-color: #747373; 
+}
+.content {
+    padding: 25px;
+}
+strong{
+    color: rgb(218, 43, 160);
+}
+h1{
+    color: white;
+}
+#SBT{
+   margin-left: 82%;
+   position: relative;
+   top: -33px;
+   padding: 7px;
+   border-radius: 30px;
+}
+#B-recherche{
+    border-radius: 30px;
+}
