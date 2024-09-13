@@ -51,7 +51,6 @@ function checklogin(){
 
 
 function checkregister(){
-    var x=$('#Role').val()
     var email = $('#email'); 
      var password = $('#password');
     var firstname=$('#first')
@@ -74,13 +73,6 @@ function checkregister(){
         alert("Your lastname must only contains characters.");
         return false;
     }
-    if(x==="User"){
-        window.location.href="index.html"
-    }
-    if(x==="Admin"){
-        window.location.href="index.html"
-    }
-    
     
     return true
     
@@ -96,8 +88,3 @@ $("#log").on("click", function () {
   $("#reg").on("click", function () {
       checkregister();
     });
-    let i = 0;
-
-
-
-  
