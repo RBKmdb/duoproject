@@ -25,27 +25,38 @@ return{title:title,
         descreption:descreption,
       category:category,
       rating:rating,
-      pictures:pictures}
+      pictures:pictures 
+    }
     }
     
   //
-    function film(){
+let list = []
 
       const add=function(title,duration,descreption,category,rating,pictures){
-      return this.list.push(factory(title,duration,descreption,category,rating,pictures))}
+      return list.push(factory(title,duration,descreption,category,rating,pictures))}
 
  const search=function(titre){
-        return filter(this.list,function(elem,i){
-            return this.list.title===titre
+        return filter(list,function(elem,i){
+            return elem.title===titre
         })
       }
-        var obj={
-        list:[],
-      add:add,
-      search:search, 
-        }
-      return obj
-      }
+ 
+
+      const toprated=function(){
+      
+        
+        x =  list.sort(function(a,b){
+          return b.rating-a.rating
+        })
+        console.log(x);
+        
+        return x 
+              }
+   
+
+
+
+
       function displayOne(film){
         $(".displays").append(`<div class = "mov"> 
           <img src="${film.pictures}">
@@ -64,23 +75,32 @@ return{title:title,
               const element = array[i];
               displayOne(element)
           }
+
       }
      
 
-var movies=film()
-movies.add("inception",148,"great movie ever","fun",7.6,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")
-movies.add("ince",148,"great movie ever","fun",7.6,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")
-displayAll(movies.list)
+
+add("inception",148,"great movie ","fun",7.6,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")
+add("oppenheimer",148,"great movie ","",5,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")
+add("game of thrones",148,"great tv show ","action",9,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")
+add("breaking bad",148,"great tv show ","fun",7,"https://www.shutterstock.com/image-vector/detailed-illustration-clapper-board-short-260nw-210237415.jpg")
+
+displayAll(list)
  function research() {
         var sear = $("#B-recherche").val();
         $(".displays").empty();
-     var x=  movies.list.search(sear);
-     console.log(x.length)
+     var x=  search(sear);
+    
      if(x.length===0){
         alert('          ***not found***')
      }
      displayAll(x)
       }
       $("#SBT").on("click", function () {
-        this.search();
+    research();
       });
+      $("#rate").click(function(){
+        console.log("hi");
+        $(".displays").empty();
+        displayAll(toprated())
+      })

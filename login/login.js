@@ -39,10 +39,10 @@ function checklogin(){
         return false;
     }
     if(x==="User"){
-        window.location.href="index.html"
+        location.assign("http://127.0.0.1:5500/admine/user/user.html")
     }
     if(x==="Admin"){
-        window.location.href="index.html"
+        location.assign("http://127.0.0.1:5500/admine/admin.html")
     }
     
     return true
@@ -51,6 +51,7 @@ function checklogin(){
 
 
 function checkregister(){
+    var x=$('#Role').val()
     var email = $('#email'); 
      var password = $('#password');
     var firstname=$('#first')
@@ -72,6 +73,12 @@ function checkregister(){
     if(nameregex.test(lastname.val())===false){
         alert("Your lastname must only contains characters.");
         return false;
+    }
+    if(x==="User"){
+        location.assign("http://127.0.0.1:5500/admine/user/user.html")
+    }
+    if(x==="Admin"){
+        location.assign("http://127.0.0.1:5500/admine/admin.html")
     }
     
     return true

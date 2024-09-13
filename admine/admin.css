@@ -17,8 +17,7 @@ body{
     padding: 5px;
 }
 h1{
-
-    color: darkturquoise;
+    color: rgb(53, 191, 246);
 }
 input{
     position: relative;
@@ -27,7 +26,7 @@ input{
 label{
     position: relative;
     top: -770px;
-    color:aquamarine;
+    color:rgb(255, 255, 255);
     font-size: 20px;
 }
 h1{
@@ -62,7 +61,7 @@ h1{
  #movi{
     z-index: 1;
     position: absolute;
-    margin-top: 624px;
+    margin-top:1070px;
  }.your-film{
     background-color: rgba(255, 255, 255, 0.885); 
     margin-left: 25%;
